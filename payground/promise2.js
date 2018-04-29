@@ -20,7 +20,7 @@ let geocode2 = (address) => {
                     latitude: body.results[0].geometry.location.lat,
                     longitude: body.results[0].geometry.location.lng
                 });
-            }
+            } else {console.log('buncha errors ........')}
         });
     });
 };
